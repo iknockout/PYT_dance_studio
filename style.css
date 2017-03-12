@@ -56,6 +56,32 @@ nav {
   height: 31.25rem;
 }
 
+.bodyTextContainer {
+  background-color: rgba(120, 73, 225, 0.9);
+  max-width: 25rem;
+  width: 100%;
+  min-height: 20rem;
+  float: right;
+}
+
+.bodyTextContainer h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+
+.bodyTextContainer p {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  padding: 1.25rem 0;
+  margin: 0 auto;
+}
+
+.bodyTextContainer a {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 460px) and (max-width: 760px) {
 
 }
