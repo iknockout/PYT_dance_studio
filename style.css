@@ -16,6 +16,8 @@ nav {
   background-size: cover;
   margin-top: 3.875rem;
   padding-top: 9.4375rem;
+  padding-bottom: 3.125rem;  /* override bootstrap .jumbotron */
+  margin-bottom: 0;  /* override bootstrap .jumbotron */
 }
 
 #jumboSection h1 {
@@ -46,6 +48,12 @@ nav {
   font-weight: bold;
   font-size: 1.375rem;
   padding: 1.25rem 3.125rem;
+}
+
+#bodySection1 {
+  background-image: url("./resources/graffiti-photo.png");
+  background-size: cover;
+  height: 31.25rem;
 }
 
 @media only screen and (min-width: 460px) and (max-width: 760px) {
