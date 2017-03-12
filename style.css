@@ -1,0 +1,28 @@
+html {
+  font-size: 16px;
+}
+
+nav {
+  height: 3.875rem;
+  padding: 0 3.4375rem 0 3.6875rem;
+}
+
+.navbar-header img {
+  height: 50px;
+}
+
+@media only screen and (min-width: 460px) and (max-width: 760px) {
+
+}
+@media only screen and (max-width: 460px) {
+
+}
+
+.myDebugOrange {
+  /* for debug */
+  border: medium solid orange;
+}
+.myDebugRed {
+  /* for debug */
+  border: medium solid red;
+}
