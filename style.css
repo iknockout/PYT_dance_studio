@@ -134,7 +134,42 @@ nav {
     background-repeat: no-repeat;
   }
 */
+
+#footerSection {
+  height: 18.125rem;  /* 3.125rem + 15rem */
+  background-image: url("./resources/party-photo.png");
+  background-size: cover;
 }
+
+.footerNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125rem;
+  color: #ffffff;
+}
+
+.footerNav p {
+  margin-bottom: 0;  /* need to override for vertical center: found via Chrome Dev Tools */
+}
+
+.fontAwesomeIcons {
+  width: 9.375rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  letter-spacing: 0.7px;
+}
+
 @media only screen and (max-width: 460px) {
 
 }
