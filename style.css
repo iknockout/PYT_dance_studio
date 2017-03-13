@@ -56,11 +56,22 @@ nav {
   padding: 1.25rem 3.125rem;
 }
 
-#bodySection1 {
-  background-image: url("./resources/graffiti-photo.png");
+.bodySection {
   background-size: cover;
   height: 31.25rem;
   color: #ffffff;
+}
+
+#bodySection1 {
+  background-image: url("./resources/graffiti-photo.png");
+}
+
+#bodySection2 {
+  background-image: url("./resources/fire-photo.png");
+}
+
+#bodySection3 {
+  background-image: url("./resources/jump-photo.png");
 }
 
 .bodyTextContainer {
