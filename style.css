@@ -169,6 +169,20 @@ nav {
     background-repeat: no-repeat;
   }
   */
+  .footerNav {
+    height: 2.5rem;
+  }
+  .footerNav img {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .footerNav p {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .fontAwesomeIcons {
+    width: 5.4375rem;
+  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -177,14 +191,14 @@ nav {
 /* end of media support */
 
 .myDebugOrange {
-  /* for debug */
-  border: medium solid orange;
+  /* for debug
+  border: medium solid orange; */
 }
 .myDebugRed {
-  /* for debug */
-  border: medium solid red;
+  /* for debug
+  border: medium solid red; */
 }
 .myDebugPink {
-  /* for debug */
-  border: medium solid pink;
+  /* for debug
+  border: medium solid pink; */
 }
