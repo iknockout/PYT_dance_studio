@@ -80,7 +80,7 @@ nav {
   width: 100%;
   min-height: 20rem;
   float: right;
-  margin-top: 11.25rem;  /* 31.25 - 20 */
+  margin-top: 6.25rem;  /* 31.25rem - 20rem - 5rem */
 }
 
 .bodyTextContainer h2 {
@@ -103,37 +103,6 @@ nav {
   padding-bottom: 3rem;
   margin: 0 auto;
 }
-
-@media only screen and (min-width: 460px) and (max-width: 760px) {
-  .jumboTextFormat {
-    max-width: 31.25rem;
-  }
-  .bodyTextContainer {
-    min-height: 12.1875rem;
-    max-width: 100%;
-    margin-top: 16rem;  /* 31.25 - 12.1875 - 3 */
-}
-  }
-  .bodyTextContainer h2 {
-    font-size: 1.875rem;
-    line-height: 1.4;
-    padding-top: 1.875rem;
-  }
-  .bodyTextContainer p {
-    font-size: 1rem;
-    line-height: 1.5;
-    padding-top: 0.625rem;
-  }
-/*
-  #jumboSection {
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .bodySection {
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-*/
 
 #footerSection {
   height: 18.125rem;  /* 3.125rem + 15rem */
@@ -170,9 +139,42 @@ nav {
   letter-spacing: 0.7px;
 }
 
+/* media support */
+@media only screen and (min-width: 460px) and (max-width: 760px) {
+  .jumboTextFormat {
+    max-width: 31.25rem;
+  }
+  .bodyTextContainer {
+    min-height: 12.1875rem;
+    max-width: 100%;
+    margin-top: 16rem;  /* 31.25 - 12.1875 - 3 */
+  }
+  .bodyTextContainer h2 {
+    font-size: 1.875rem;
+    line-height: 1.4;
+    padding-top: 1.875rem;
+  }
+  .bodyTextContainer p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 0.625rem;
+  }
+  /*
+  #jumboSection {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .bodySection {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  */
+}
+
 @media only screen and (max-width: 460px) {
 
 }
+/* end of media support */
 
 .myDebugOrange {
   /* for debug */
