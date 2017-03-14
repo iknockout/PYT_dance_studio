@@ -193,6 +193,14 @@ nav {
   .notDesktop {
     display: flex;
   }
+  .footerText {
+    margin-top: 1.875rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+  }
+  #footerSection {
+    height: 11.25rem;  /* 2.5rem + 8.75rem */
+  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -215,6 +223,14 @@ nav {
   }
   .notDesktop {
     display: flex;
+  }
+  .footerText {
+    margin-top: 1.875rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+  }
+  #footerSection {
+    height: 11.25rem;  /* 2.5rem + 8.75rem */
   }
 }
 /* end of media support */
