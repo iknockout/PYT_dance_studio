@@ -129,6 +129,10 @@ nav {
   justify-content: space-between;
 }
 
+.notDesktop {
+  display: none;
+}
+
 .footerText {
   display: flex;
   flex-direction: column;
@@ -183,10 +187,35 @@ nav {
   .fontAwesomeIcons {
     width: 5.4375rem;
   }
+  .isDesktop {
+    display: none;
+  }
+  .notDesktop {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 460px) {
-
+  .footerNav {
+    height: 2.5rem;
+  }
+  .footerNav img {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .footerNav p {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .fontAwesomeIcons {
+    width: 5.4375rem;
+  }
+  .isDesktop {
+    display: none;
+  }
+  .notDesktop {
+    display: flex;
+  }
 }
 /* end of media support */
 
