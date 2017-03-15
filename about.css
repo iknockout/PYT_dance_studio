@@ -2,3 +2,31 @@
   color: #f5a623;
 }
 
+.aboutJumboText {
+  display: flex;
+  flex-direction: column;
+}
+
+.isMobile {
+  display: none;
+}
+
+/* media support */
+@media only screen and (min-width: 460px) and (max-width: 760px) {
+  .isMobile {
+    display: flex;
+  }
+  .notMobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .isMobile {
+    display: flex;
+  }
+  .notMobile {
+    display: none;
+  }
+}
+/* end of media support */
