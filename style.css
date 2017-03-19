@@ -82,6 +82,7 @@ nav {
   max-width: 25rem;
   width: 100%;
   min-height: 20rem;
+  padding-left: 3rem;
   /* float: right;  use flexbox instead */
   /* margin-top: 6.25rem;  use flexbox instead, 31.25rem - 20rem - 5rem */
 }
