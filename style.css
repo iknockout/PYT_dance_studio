@@ -60,6 +60,9 @@ nav {
   background-size: cover;
   height: 31.25rem;
   color: #ffffff;
+  display: flex;  /* use this instead of float */
+  justify-content: flex-end;  /* use this instead of float */
+  align-items: flex-end;  /* use this instead of float */
 }
 
 #bodySection1 {
@@ -79,8 +82,8 @@ nav {
   max-width: 25rem;
   width: 100%;
   min-height: 20rem;
-  float: right;
-  margin-top: 6.25rem;  /* 31.25rem - 20rem - 5rem */
+  /* float: right;  use flexbox instead */
+  /* margin-top: 6.25rem;  use flexbox instead, 31.25rem - 20rem - 5rem */
 }
 
 .bodyTextContainer h2 {
