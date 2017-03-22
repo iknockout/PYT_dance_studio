@@ -1,5 +1,24 @@
+html {
+  font-size: 16px;
+}
+
+nav {
+  height: 3.875rem;
+  padding: 0 3.4375rem 0 3.6875rem;
+}
+
+.navbar-header img {
+  height: 50px;
+}
+
 #navAbout a {
   color: #f5a623;
+}
+
+/* override bootstrap .container-fluid */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .aboutJumboText {
@@ -7,8 +26,51 @@
   flex-direction: column;
 }
 
+#aboutJumboSection img {
+  height: auto;
+}
+
 .isMobile {
   display: none;
+}
+
+#footerSection {
+  height: 18.125rem;  /* 3.125rem + 15rem */
+  background-image: url("./resources/party-photo.png");
+  background-size: cover;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125rem;
+  color: #ffffff;
+}
+
+.footerNav p {
+  margin-bottom: 0;  /* need to override for vertical center: found via Chrome Dev Tools */
+}
+
+.fontAwesomeIcons {
+  width: 9.375rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notDesktop {
+  display: none;
+}
+
+.footerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  letter-spacing: 0.7px;
 }
 
 /* media support */
@@ -19,6 +81,34 @@
   .notMobile {
     display: none;
   }
+  .footerNav {
+    height: 2.5rem;
+  }
+  .footerNav img {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .footerNav p {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .fontAwesomeIcons {
+    width: 5.4375rem;
+  }
+  .isDesktop {
+    display: none;
+  }
+  .notDesktop {
+    display: flex;
+  }
+  .footerText {
+    margin-top: 1.875rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+  }
+  #footerSection {
+    height: 11.25rem;  /* 2.5rem + 8.75rem */
+  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -28,5 +118,42 @@
   .notMobile {
     display: none;
   }
+  .footerNav {
+    height: 2.5rem;
+  }
+  .footerNav img {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .footerNav p {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .fontAwesomeIcons {
+    width: 5.4375rem;
+  }
+  .isDesktop {
+    display: none;
+  }
+  .notDesktop {
+    display: flex;
+  }
+  .footerText {
+    margin-top: 1.875rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+  }
+  #footerSection {
+    height: 11.25rem;  /* 2.5rem + 8.75rem */
+  }
 }
 /* end of media support */
+
+.myDebugYellow {
+  /* for debug */
+  border: medium solid yellow;
+}
+.myDebugGreen {
+  /* for debug */
+  border: medium solid green;
+}
