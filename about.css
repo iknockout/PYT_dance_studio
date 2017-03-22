@@ -24,8 +24,8 @@ nav {
 .aboutJumboText {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 50%;
+  text-align: center;
 }
 
 .aboutJumboText h1 {
@@ -62,9 +62,9 @@ nav {
   flex-direction: row;
   align-items: center;
   max-width: 62%;  /* per spec 19% space on left and right */
-  width: 100%;
+  margin-left: 19%;
   height: auto;
-  padding-top: 4rem;
+  padding: 4rem 0 3rem 0;
 }
 
 .aboutBodyContainer img {
@@ -75,6 +75,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding-left: 5rem;
+  text-align: center;
 }
 
 .aboutBodyText h2 {
@@ -152,6 +153,21 @@ nav {
     font-size: 1rem;
     line-height: 1.6;
     padding-top: 0;
+  }
+  .aboutBodyContainer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.875rem 0;
+  }
+  .aboutBodyText {
+    padding-left: 0;
+  }
+  .aboutBodyText h2 {
+    font-size: 1.75rem;
+  }
+  .aboutbodyText p {
+    font-size: 1rem;
+    line-height: 1.6;
   }
   .footerNav {
     height: 2.5rem;
