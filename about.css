@@ -57,6 +57,38 @@ nav {
   display: none;
 }
 
+.aboutBodyContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 62%;  /* per spec 19% space on left and right */
+  width: 100%;
+  height: auto;
+  padding-top: 4rem;
+}
+
+.aboutBodyContainer img {
+  max-height: 9.375rem;
+}
+
+.aboutBodyText {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+}
+
+.aboutBodyText h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #794ae2;
+}
+
+.aboutBodyText p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666666;
+}
+
 #footerSection {
   height: 18.125rem;  /* 3.125rem + 15rem */
   background-image: url("./resources/party-photo.png");
