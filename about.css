@@ -64,7 +64,7 @@ nav {
   max-width: 62%;  /* per spec 19% space on left and right */
   margin-left: 19%;
   height: auto;
-  padding: 4rem 0 3rem 0;
+  padding: 4rem 0;
 }
 
 .aboutBodyContainer img {
@@ -74,7 +74,6 @@ nav {
 .aboutBodyText {
   display: flex;
   flex-direction: column;
-  padding-left: 5rem;
   text-align: center;
 }
 
@@ -88,6 +87,18 @@ nav {
   font-size: 1.5rem;
   line-height: 1.5;
   color: #666666;
+}
+
+.picLeft {
+  padding-left: 5rem;
+}
+
+.picRight {
+  padding-right: 5rem;
+}
+
+.aboutBackgroundColor {
+  background-color: #f2f2f2;
 }
 
 #footerSection {
@@ -159,8 +170,12 @@ nav {
     justify-content: center;
     padding: 1.875rem 0;
   }
+  .aboutBodyContainer img {
+    max-height: 6.25rem;
+  }
   .aboutBodyText {
     padding-left: 0;
+    padding-right: 0;
   }
   .aboutBodyText h2 {
     font-size: 1.75rem;
