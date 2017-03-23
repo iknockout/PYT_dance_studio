@@ -197,6 +197,23 @@ nav {
   .notMobile {
     display: none;
   }
+  .classesJumboSection {
+    flex-direction: column;
+  }
+  .classesJumboSection img {
+    width: 100%;
+  }
+  .classesJumboText {
+    width: 100%;
+  }
+  .classesJumboText h1 {
+    font-size: 1.25rem;
+  }
+  .classesJumboText p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-top: 0;
+  }
   .jumboTextFormat {
     max-width: 31.25rem;
   }
@@ -261,6 +278,23 @@ nav {
   }
   .notMobile {
     display: none;
+  }
+  .classesumboSection {
+    flex-direction: column;
+  }
+  .classesJumboSection img {
+    width: 100%;
+  }
+  .classesJumboText {
+    width: 100%;
+  }
+  .classesJumboText h1 {
+    font-size: 1.25rem;
+  }
+  .classesJumboText p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-top: 0;
   }
   .footerNav {
     height: 2.5rem;
