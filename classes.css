@@ -15,6 +15,44 @@ nav {
   color: #f5a623;
 }
 
+.classesJumboText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  padding-right: 3rem;
+}
+
+.classesJumboText h1 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: rgba(174, 75, 227, 0.9);
+}
+
+.classesJumboText p {
+  color: #666666;
+  padding-top: 4rem;
+}
+
+.classesJumboSection {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 50px;
+  border-bottom: 10px solid #794ae2;
+}
+
+.classesJumboSection img {
+  width: 50%;
+  height: auto;
+}
+
+.isMobile {
+  display: none;
+}
+
+
 /* override bootstrap .container-fluid */
 .container-fluid {
   padding-left: 0;
@@ -153,6 +191,12 @@ nav {
 
 /* media support */
 @media only screen and (min-width: 460px) and (max-width: 760px) {
+  .isMobile {
+    display: flex;
+  }
+  .notMobile {
+    display: none;
+  }
   .jumboTextFormat {
     max-width: 31.25rem;
   }
@@ -212,6 +256,12 @@ nav {
 }
 
 @media only screen and (max-width: 460px) {
+  .isMobile {
+    display: flex;
+  }
+  .notMobile {
+    display: none;
+  }
   .footerNav {
     height: 2.5rem;
   }
