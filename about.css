@@ -101,6 +101,46 @@ nav {
   background-color: #f2f2f2;
 }
 
+.aboutMapContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url("./resources/map.jpg");
+  background-size: cover;
+  height: 31.25rem;
+}
+
+.mapText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #794ae2;
+  color: white;
+  height: 75%;
+  width: 40%;
+  padding-left: 3rem;
+}
+
+.mapText h3 {
+  font-size: 2rem;
+  padding-bottom: 1.25rem;
+}
+
+.mapText h5 {
+  font-size: 1rem;
+  line-height: 0.1;
+}
+
+.mapText h6 {
+  font-size: 1rem;
+  line-height: 0.1;
+  font-weight: 300;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
 #footerSection {
   height: 18.125rem;  /* 3.125rem + 15rem */
   background-image: url("./resources/party-photo.png");
@@ -184,6 +224,24 @@ nav {
     font-size: 1rem;
     line-height: 1.6;
   }
+  .mapText {
+    height: 45%;
+    width: 75%;
+    padding-left: 2rem;
+  }
+  .mapText h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .mapText h5 {
+    font-size: 0.8rem;
+    line-height: 0.1;
+  }
+  .mapText h6 {
+    font-size: 0.8rem;
+    line-height: 0.1;
+    font-weight: 300;
+  }
   .footerNav {
     height: 2.5rem;
   }
@@ -256,6 +314,24 @@ nav {
   .aboutbodyText p {
     font-size: 1rem;
     line-height: 1.6;
+  }
+  .mapText {
+    height: 45%;
+    width: 75%;
+    padding-left: 2rem;
+  }
+  .mapText h3 {
+    font-size: 1rem;
+    padding-bottom: 0.6rem;
+  }
+  .mapText h5 {
+    font-size: 0.7rem;
+    line-height: 0.1;
+  }
+  .mapText h6 {
+    font-size: 0.7rem;
+    line-height: 0.1;
+    font-weight: 300;
   }
   .footerNav {
     height: 2.5rem;
