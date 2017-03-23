@@ -238,6 +238,25 @@ nav {
     line-height: 1.6;
     padding-top: 0;
   }
+  .aboutBodyContainer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.875rem 0;
+  }
+  .aboutBodyContainer img {
+    max-height: 6.25rem;
+  }
+  .aboutBodyText {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .aboutBodyText h2 {
+    font-size: 1.75rem;
+  }
+  .aboutbodyText p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
   .footerNav {
     height: 2.5rem;
   }
