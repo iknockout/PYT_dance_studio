@@ -48,6 +48,37 @@ nav {
   height: auto;
 }
 
+.classesContainer {
+  padding: 5.3125rem 1.125rem 1.125rem 2.4rem;
+}
+
+.oneClassContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+}
+
+.oneClassContainer h3 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgba(174,75,227,0.9);
+}
+.oneClassContainer h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-top: 1.125rem;
+}
+.oneClassContainer h5 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+.oneClassContainer p {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  padding-bottom: 3.75rem;
+}
+
 /* override bootstrap .container-fluid */
 .container-fluid {
   padding-left: 0;
@@ -337,8 +368,8 @@ nav {
   border: medium solid orange; */
 }
 .myDebugRed {
-  /* for debug
-  border: medium solid red; */
+  /* for debug */
+  border: medium solid red;
 }
 .myDebugPink {
   /* for debug
