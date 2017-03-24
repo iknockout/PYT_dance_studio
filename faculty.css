@@ -1,0 +1,404 @@
+html {
+  font-size: 16px;
+}
+
+nav {
+  height: 3.875rem;
+  padding: 0 3.4375rem 0 3.6875rem;
+}
+
+.navbar-header img {
+  height: 50px;
+}
+
+#navClasses a {
+  color: #f5a623;
+}
+
+.classesJumboText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  padding-right: 3rem;
+}
+
+.classesJumboText h1 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: rgba(174, 75, 227, 0.9);
+}
+
+.classesJumboText p {
+  color: #666666;
+  padding-top: 4rem;
+}
+
+.classesJumboSection {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 50px;
+  border-bottom: 10px solid #794ae2;
+}
+
+.classesJumboSection img {
+  width: 50%;
+  height: auto;
+}
+
+.classesContainer {
+  padding: 5.3125rem 1.125rem 1.125rem 2.4rem;
+}
+
+.oneClassContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+}
+
+.oneClassContainer h3 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgba(174,75,227,0.9);
+}
+.oneClassContainer h4 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-top: 1.125rem;
+}
+.oneClassContainer h5 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+.oneClassContainer p {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  padding-bottom: 3.75rem;
+}
+
+/* override bootstrap .container-fluid */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#jumboSection {
+  background-image: url("./resources/dancers-photo.png");
+  background-size: cover;
+  margin-top: 3.875rem;
+  padding-top: 9.4375rem;
+  padding-bottom: 3.125rem;  /* override bootstrap .jumbotron */
+  margin-bottom: 0;  /* override bootstrap .jumbotron */
+}
+
+#jumboSection h1 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;  /* override bootstrap .jumbotron h1 else color is inherit */
+}
+
+#jumboSection p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 2.6875rem 0 5rem 0;
+  margin-bottom: 0;  /* override bootstrap .jumbotron p */
+}
+
+.jumboTextFormat {
+  max-width: 45rem;
+  width: 100%;
+  margin: 0 auto;  /* this is a must for centering when width is set */
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #f5a623;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.375rem;
+  padding: 1.25rem 3.125rem;
+}
+
+.bodySection {
+  background-size: cover;
+  height: 31.25rem;
+  color: #ffffff;
+  display: flex;  /* use this instead of float */
+  justify-content: flex-end;  /* use this instead of float */
+  align-items: flex-end;  /* use this instead of float */
+}
+
+#bodySection1 {
+  background-image: url("./resources/graffiti-photo.png");
+}
+
+#bodySection2 {
+  background-image: url("./resources/fire-photo.png");
+}
+
+#bodySection3 {
+  background-image: url("./resources/jump-photo.png");
+}
+
+.bodyTextContainer {
+  background-color: rgba(120, 73, 225, 0.9);
+  max-width: 25rem;
+  width: 100%;
+  min-height: 20rem;
+  padding-left: 3rem;
+  /* float: right;  use flexbox instead */
+  /* margin-top: 6.25rem;  use flexbox instead, 31.25rem - 20rem - 5rem */
+}
+
+.bodyTextContainer h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.bodyTextContainer p {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  padding: 1.25rem 0;
+  margin: 0 auto;
+}
+
+.bodyTextContainer h4 {
+  font-weight: bold;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+}
+
+#footerSection {
+  height: 18.125rem;  /* 3.125rem + 15rem */
+  background-image: url("./resources/party-photo.png");
+  background-size: cover;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125rem;
+  color: #ffffff;
+}
+
+.footerNav p {
+  margin-bottom: 0;  /* need to override for vertical center: found via Chrome Dev Tools */
+}
+
+.fontAwesomeIcons {
+  width: 9.375rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notDesktop {
+  display: none;
+}
+
+.footerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  letter-spacing: 0.7px;
+}
+
+.isTablet {
+  display: none;
+}
+.isMobile {
+  display: none;
+}
+.isDesktop {
+  display: flex;
+}
+
+/* media support */
+@media only screen and (min-width: 460px) and (max-width: 760px) {
+  .isTablet {
+    display: flex;
+  }
+  .isMobile {
+    display: none;
+  }
+  .isDesktop {
+    display: none;
+  }
+  .notDesktop {
+    display: flex;
+  }
+  .classesJumboSection {
+    flex-direction: column;
+  }
+  .classesJumboSection img {
+    width: 100%;
+  }
+  .classesJumboText {
+    width: 100%;
+  }
+  .classesJumboText h1 {
+    font-size: 1.25rem;
+  }
+  .classesJumboText p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-top: 0;
+  }
+  .oneClassContainer {
+    max-width: 18.75rem;
+  }
+  .oneClassContainer h5 {
+    font-size: 1.125rem;
+  }
+  .oneClassContainer p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 2.25rem;
+  }
+  .jumboTextFormat {
+    max-width: 31.25rem;
+  }
+  .bodyTextContainer {
+    min-height: 12.1875rem;
+    max-width: 100%;
+    margin-top: 16rem;  /* 31.25 - 12.1875 - 3 */
+  }
+  .bodyTextContainer h2 {
+    font-size: 1.875rem;
+    line-height: 1.4;
+    padding-top: 1.875rem;
+  }
+  .bodyTextContainer p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 0.625rem;
+  }
+  /*
+  #jumboSection {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .bodySection {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  */
+  .footerNav {
+    height: 2.5rem;
+  }
+  .footerNav img {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .footerNav p {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .fontAwesomeIcons {
+    width: 5.4375rem;
+  }
+  .footerText {
+    margin-top: 1.875rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+  }
+  #footerSection {
+    height: 11.25rem;  /* 2.5rem + 8.75rem */
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .isTablet {
+    display: none;
+  }
+  .isMobile {
+    display: flex;
+  }
+  .isDesktop {
+    display: none;
+  }
+  .notDesktop {
+    display: flex;
+  }
+  .classesJumboSection {
+    flex-direction: column;
+  }
+  .classesJumboSection img {
+    width: 100%;
+  }
+  .classesJumboText {
+    width: 100%;
+  }
+  .classesJumboText h1 {
+    font-size: 1.25rem;
+  }
+  .classesJumboText p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-top: 0;
+  }
+  .oneClassContainer {
+    min-width: 17.5rem;
+  }
+  .oneClassContainer h4 {
+    font-size: 1rem;
+    padding-top: 0.625rem;
+  }
+  .oneClassContainer h5 {
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+  .oneClassContainer p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    padding-bottom: 2.5rem;
+  }
+  .footerNav {
+    height: 2.5rem;
+  }
+  .footerNav img {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .footerNav p {
+    /* display: none; .fontAwesomeIcons don't center when this is used */
+    opacity: 0;
+  }
+  .fontAwesomeIcons {
+    width: 5.4375rem;
+  }
+  .footerText {
+    margin-top: 1.875rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+  }
+  #footerSection {
+    height: 11.25rem;  /* 2.5rem + 8.75rem */
+  }
+}
+/* end of media support */
+
+.myDebugOrange {
+  /* for debug
+  border: medium solid orange; */
+}
+.myDebugRed {
+  /* for debug
+  border: medium solid red; */
+}
+.myDebugPink {
+  /* for debug
+  border: medium solid pink; */
+}
