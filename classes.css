@@ -256,6 +256,17 @@ nav {
     line-height: 1.6;
     padding-top: 0;
   }
+  .oneClassContainer {
+    max-width: 18.75rem;
+  }
+  .oneClassContainer h5 {
+    font-size: 1.125rem;
+  }
+  .oneClassContainer p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 2.25rem;
+  }
   .jumboTextFormat {
     max-width: 31.25rem;
   }
@@ -338,6 +349,22 @@ nav {
     line-height: 1.6;
     padding-top: 0;
   }
+  .oneClassContainer {
+    min-width: 17.5rem;
+  }
+  .oneClassContainer h4 {
+    font-size: 1rem;
+    padding-top: 0.625rem;
+  }
+  .oneClassContainer h5 {
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+  .oneClassContainer p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    padding-bottom: 2.5rem;
+  }
   .footerNav {
     height: 2.5rem;
   }
@@ -368,8 +395,8 @@ nav {
   border: medium solid orange; */
 }
 .myDebugRed {
-  /* for debug */
-  border: medium solid red;
+  /* for debug
+  border: medium solid red; */
 }
 .myDebugPink {
   /* for debug
