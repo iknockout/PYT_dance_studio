@@ -48,11 +48,6 @@ nav {
   height: auto;
 }
 
-.isMobile {
-  display: none;
-}
-
-
 /* override bootstrap .container-fluid */
 .container-fluid {
   padding-left: 0;
@@ -189,13 +184,29 @@ nav {
   letter-spacing: 0.7px;
 }
 
+.isTablet {
+  display: none;
+}
+.isMobile {
+  display: none;
+}
+.isDesktop {
+  display: flex;
+}
+
 /* media support */
 @media only screen and (min-width: 460px) and (max-width: 760px) {
-  .isMobile {
+  .isTablet {
     display: flex;
   }
-  .notMobile {
+  .isMobile {
     display: none;
+  }
+  .isDesktop {
+    display: none;
+  }
+  .notDesktop {
+    display: flex;
   }
   .classesJumboSection {
     flex-direction: column;
@@ -256,12 +267,6 @@ nav {
   .fontAwesomeIcons {
     width: 5.4375rem;
   }
-  .isDesktop {
-    display: none;
-  }
-  .notDesktop {
-    display: flex;
-  }
   .footerText {
     margin-top: 1.875rem;
     font-size: 0.625rem;
@@ -273,13 +278,19 @@ nav {
 }
 
 @media only screen and (max-width: 460px) {
+  .isTablet {
+    display: none;
+  }
   .isMobile {
     display: flex;
   }
-  .notMobile {
+  .isDesktop {
     display: none;
   }
-  .classesumboSection {
+  .notDesktop {
+    display: flex;
+  }
+  .classesJumboSection {
     flex-direction: column;
   }
   .classesJumboSection img {
@@ -309,12 +320,6 @@ nav {
   }
   .fontAwesomeIcons {
     width: 5.4375rem;
-  }
-  .isDesktop {
-    display: none;
-  }
-  .notDesktop {
-    display: flex;
   }
   .footerText {
     margin-top: 1.875rem;
