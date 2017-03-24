@@ -34,15 +34,26 @@ nav {
   padding-top: 4rem;
 }
 
-.classesJumboSection {
+#facultyJumboSection {
+  background-image: url("./resources/faculty-photo.png");
+  border-bottom: 10px solid #8a54ff;
+  min-height: 31.5rem;  /* 9rem x 3.5 */
+  background-size: cover;
+  margin-top: 60px;
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 50px;
-  border-bottom: 10px solid #794ae2;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-
+#facultyJumboSection h1 {
+  color: rgba(174, 75, 227, 0.9);
+  width: 60%;
+  text-align: center;
+}
+#facultyJumboSection p {
+  color: #999999;
+  width: 60%;
+  text-align: center;
+}
 .classesJumboSection img {
   width: 50%;
   height: auto;
