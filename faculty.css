@@ -381,6 +381,10 @@ nav {
     line-height: 1.7;
     padding-bottom: 2.5rem;
   }
+  #facultyJumboSection {
+    justify-content: flex-end;
+    padding-left: 10%;
+  }
   .footerNav {
     height: 2.5rem;
   }
