@@ -66,6 +66,7 @@ nav {
 .oneFacultyContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 35rem;  /* fix for different height */
   text-align: center;
 }
@@ -404,8 +405,8 @@ nav {
 /* end of media support */
 
 .myDebugOrange {
-  /* for debug */
-  border: medium solid orange;
+  /* for debug
+  border: medium solid orange; */
 }
 .myDebugRed {
   /* for debug
