@@ -42,16 +42,18 @@ nav {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  padding-left: 40%;
+  padding-right: 10%;
 }
 #facultyJumboSection h1 {
   color: rgba(174, 75, 227, 0.9);
-  width: 60%;
+  width: 100%;
   text-align: center;
 }
 #facultyJumboSection p {
   color: #999999;
-  width: 60%;
+  width: 100%;
   text-align: center;
 }
 .classesJumboSection img {
